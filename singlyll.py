@@ -76,10 +76,9 @@ class SinglyLinkedList:
         current = self.head
         sll = []
         while current:
-            sll.append(current.data)
+            print(current.data, end=" ->")
             current = current.next
-        print("Displaying Linked list","->".join(map(str,sll)))
-
+        print()
     def delete(self,data):
         """
         steps
